@@ -1,0 +1,438 @@
+*{ margin: 0;
+  padding: 0;
+}
+/*Header*/
+header {
+  background-color: #d6d4e0; 
+
+}
+  header img {
+    padding: 5px;
+    margin: 5px; 
+}
+  header h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    align-items: center; 
+}
+h1 p {
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+/*Main*/
+.borde{
+  border: double;
+  color: blanchedalmond;
+}
+main section ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch; 
+    padding: 20px 20px; 
+}
+    main section ul li {
+      font-family: Papyrus, fantasy;
+      font-size: 35px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px; 
+}
+      main section ul li a {
+        text-decoration: none;
+        color: black; 
+        display: flex;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px;
+  padding: 10px;
+}
+.divFondo{
+  background-color: #b8a9c9;
+}
+
+.subtitulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  background-color: black;
+  color: orangered;
+}
+
+.divMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu{
+  background-color: #b8a9c9;
+  border: outset;
+
+}
+
+.seccion {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 5px 5px 5px;
+}
+.fondoMujer{
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/mujer.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 3em;
+}
+.fondoHombre{
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/hombre.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 3em;
+}
+.fondoNiño{
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/fondoninño.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 3em;
+}
+.fondoCalzado{
+  width: 100%;
+  height: 400px;
+  background-image: url(../imagenes/fondocalzado.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 3em;
+}
+/*Footer*/
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+footer p {
+  font-family: "Brush Script MT", cursive;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+footer h3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+footer h4 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+/*Transicion*/
+.transicionMenu a:hover {
+  transition: 3s;
+  font-size: 2rem; 
+}
+
+/*Animacion*/
+header {
+  animation-duration: 4s;
+  animation-name: aparecer; 
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  } 
+}
+
+/*Animacion Logo*/
+@keyframes efecto {
+  0% {
+    width: 50px; 
+  }
+  50% {
+    width: 100px; 
+  }
+  100% {
+    width: 50px; 
+  } 
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; 
+}
+
+.menu {
+  background-color: #d8dede;
+  background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%); 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px; 
+}
+
+.seccion {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 100px 100px 100px; 
+}
+
+.main {
+  background-color: #b8a9c9;
+  padding: 10px;
+  margin: 5px; 
+}
+
+.footer {
+  background-color: #e3cae6;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Estilo a mis paginas*/
+.grillaRepetitiva {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; 
+}
+
+.paginas {
+  background-color: #d6d4e0;
+  padding: 5px 5%; 
+}
+
+section{
+  border: double;
+  color: darkslateblue;
+}
+
+/*MEDIA QUERIS*/
+ /* Smartphone */
+@media (max-width: 480px) {
+  body {
+      background-color: #cfe0e8;
+  }
+  h1{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  h1 p{
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  ul{
+    flex-direction: column;
+  }
+  main section ul li {
+    font-family: Papyrus, fantasy;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 10px; 
+}
+  section ul li a{
+    text-decoration: none;
+  }
+  footer{
+    flex-direction: column;
+  }
+  footer form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10%;
+    margin-top: 20px;
+  }
+  footer p {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer ul{
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+    list-style: none;
+  }
+  footer h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .grillaRepetitiva{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+  header img{
+   width: 100px;
+   height: 100px;
+   justify-items: left;
+  }
+}
+/* Tablet */
+@media (min-width: 600px) {
+  body {
+      background-color: #b7d7e8;
+  }
+
+  ul{
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10%;
+    margin-top: 20px;
+  }
+  .grillaRepetitiva{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+  header img{
+   width: 150px;
+   height: 150px;
+   justify-items: left;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+ body {
+    background-color:#daebe8;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 8px;
+    margin: 5px;
+  }
+  nav{
+    width: 40%;
+  }
+  .enlacesNav {
+    display: flex;
+    justify-content: flex-start;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  ul{
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;
+  }
+  li{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111;
+    padding: 5px 10px;
+    list-style: none;
+  }
+  .grillaRepetitiva{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+  }
+  div p{
+    color: black;
+    align-items: center;
+    font-family: cursive;
+  }
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+  }
+  footer form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 10%;
+    margin-top: 20px;
+  }
+  footer p {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
